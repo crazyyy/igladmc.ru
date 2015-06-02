@@ -35,7 +35,7 @@ if (htmlOWp === true) {
 var paths = {
   images: {
     src: basePaths.src + 'img/',
-    dest: basePaths.dest + 'img/'
+    dest: basePaths.dest + 'images_test/'
   },
   scripts: {
     src: basePaths.src + 'js/**',
