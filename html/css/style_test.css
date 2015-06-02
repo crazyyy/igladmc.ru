@@ -1,0 +1,2158 @@
+*{/*обнуляем все отступы по умолчанию PF Din Text Pro Light*/
+	margin:0; padding:0;}
+img{/*убираем у картинок стандартные рамки*/
+	border:none;}
+	
+@font-face {
+    font-family:'PF Din Text Pro Light';
+    src: url('../fonts/PFDinTextPro-Light.ttf');
+    src: local('O'),
+         url('../fonts/PFDinTextPro-Light.woff') format('woff'),
+         url('../fonts/PFDinTextPro-Light.ttf') format('truetype'),
+         url('../fonts/PFDinTextPro-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'ADVENTURE';
+    src: url('../fonts/ADVENTURE.TTF');
+    src: local('O'),
+        
+         url('../fonts/ADVENTURE.TTF') format('truetype'),
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{/*указываем фон боди*/
+	background:#f5f3f3;/**/ 
+	margin-bottom:0;
+	font-size:100%;
+	/*font-family: ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;*/
+}
+ h1 {font-size:/*24px*/1.5em;}
+	/*ФОРМУЛА РАСЧЕТА РАЗМЕРА ШРИФТА В em - НУЖНЫЙ РАЗМЕР/КОНТЕКСТ=РЕЗУЛЬТАТ(ПРИМЕР: 24px(цель)/16px(контекст)=1.5em(результат))*/
+    /*24px -  1.5em   */
+	/*23px -  1.4em   */
+	/*22px -  1.3em   */
+	/*21px -  1.2em   */
+	/*20px -  1.25em   */
+	/*19px -  1.18em   */
+	/*18px -  1.12em   */
+	/*17px -  1.06em   */
+	/*16px -  1em   */
+	/*15px -  .93em   */
+	/*14px -  .87em   */
+	/*13px -  .81em   */
+	/*12px -  .75em   */
+	/*11px -  .68em   */
+	/*10px -  .62em   */
+	/*9px -   .56em   */
+	/*8px -   .43em   */
+	/*7px -   .43em   */
+	/*6px -   .37em   */
+	/*5px -   .31em   */
+	/*4px -   .25em   */
+  
+  .clr{/*обнуляем все значения для флоутов*/
+	clear:both;}
+/*Poiret One Regular*/
+/*OpenSans CondLightItalic*/
+
+.width_img { max-width:100%;}
+.no_width_img{ max-width:100%;}
+.width_img_tbl{ max-width:100%;}
+.width_img_form{ max-width:100%;}
+.width_nabor_img{ max-width:100%;}
+/* ************************************************************** */
+/* ----------------------- HEADER ------------------------------- */
+/* ************************************************************** */
+.main{
+	  width:100%;}/*1278px*/
+ 
+.header_main {z-index:0; width:100%; /*для закрепления шапки сайта при прокрутке*/} 
+ .header{ background: #e1787d url(../images_test/header.jpg) top left repeat; 
+		  width:100%; 
+		  height:70px; 
+		  border-bottom:1px solid #ffffff;
+		  overflow:hidden;
+		  position: fixed;/*для закрепления шапки сайта при прокрутке*/
+		  z-index: 9999;/*для закрепления шапки сайта при прокрутке*/
+		  }
+   .header_content {
+                    max-width:900px; 
+					margin:0 auto;
+					position:relative;
+					}
+   .img_pos { display:block; position:absolute; top:0; right:-130px; z-index:1; max-width:100%;}				
+	.header_box_l {float:left; 
+	               width:25%;}
+	 .header_box_m {float:left; 
+	                 width:48%;}
+	   .header_box_c {float:left; 
+	                  width:27%; 
+	                  height:70px; 
+					  padding-top:15px;
+					  background:url(../images_test/icon_phone.jpg) left no-repeat;
+					  }
+	   .header_logo, .header_menu, .header_contact {line-height:1.0;/*междустрочный интервал*/
+	                                                overflow:hidden; }
+	    .header_logo { text-align:center; padding:8px 0 6px 0; }
+	     .header_logo h1{ font-family: ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+		                  font-size:/*22px*/1.3em; font-weight:bold; color:#000; }
+	      .header_logo span{ font-size:/*14px*/.83em; 
+		                     font-weight:normal; 
+		                     color:#fff; 
+		                     font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;}
+		.header_menu{ width:90%; margin:0 auto;} 
+		 .header_menu ul{display:table-row; list-style:none;}
+		  .header_menu ul li{ display:table-cell; 
+		                      width:auto;
+							  height:70px; 
+							  vertical-align:middle;}
+		   .header_menu ul li a{ display:block;
+		                         text-decoration: underline;
+		                         font-size:/*16px*/.8em; 
+		                         font-weight:normal; 
+		                         color:#fff; 
+		                         font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;
+								 padding:0 5px;
+								 vertical-align:middle; 
+								 height:70px; 
+								 display:table-cell;}
+		     .header_menu ul li a:hover{ text-decoration: none;}
+		      .header_contact { padding-left:55px; width:100%;}
+			   .header_contact p{ 
+						 font-size:/*30px*/1.8em; 
+		                 font-weight:normal; 
+						 color:#fff; 
+						 font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;
+						 margin-bottom:6px;}
+		           .header_contact span{ background:#72b335; 
+							 padding:2px; 
+		                     border:1px solid #fff; 
+		                     font-size:/*14px*/.82em; 
+		                     font-weight:normal; 
+		                     color:#fff; 
+		                     font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;}
+                      .header_contact a{ text-decoration:none;color:#fff;}
+
+/* ************************************************************** */
+/* ------------------------- CONTENT ---------------------------- */
+/* ************************************************************** */
+
+/* -------------------- FOR CONTENT WIDTH ------------------------- */	
+.display_box {padding-top:74px; max-width:1800px; margin:0 auto;} 
+ .display_content1,
+ .preimuchestva, 
+ .primery_rabot, 
+ .sostav_nabora, 
+ .sale,
+ .format, 
+ .zakaz_shema, 
+ .vibor_client, 
+ .sdelat_zakaz, 
+ .otziv, 
+ .uspey_zakazat {width:100%; }
+  
+  .display_content1{  
+					height:573px;
+		            border-bottom:1px solid #ffffff;
+		            overflow:hidden;
+					background: #ffd4de url(../images_test/background1.jpg) top left no-repeat;/**/
+					}
+	 .content1, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11, .content12, .content13 
+		               {max-width:900px; 
+			            margin:0 auto;
+				        overflow:hidden;
+						}	  
+  
+  #button { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 30px 0 27px 0;
+            text-align: center;
+            width:262px;
+            height:50px;  
+	       }
+	#button:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;color: #ff0000;}
+     #color_red{ color:#ff0000 !important; font-size:/*20px*/1.25em !important;}	
+	 .box_content2, .box_content9 {/*min-width:900px;*/ ; 
+                                   max-width:900px; /**/ 
+			                       margin:0 auto;
+				                   overflow:hidden;
+					               position:relative;
+	                              }
+     .content2 {float:left; width:49%; height:auto;}
+	   .content2 img{ display:block; margin-top:180px; margin-left:44%;} 
+	    .content3 {float:right; width:49%; }
+		  
+	  .content5 .content_h2{ margin-top:30px !important;} 
+	   .content6 .content_h2, .content12 .content_h2{ margin-top:46px !important;}
+		.content7 .content_h2{ margin-top:29px !important;}
+		 .content8 .content_h2{ margin-top:10px !important;}
+		  .content10 .content_h3, .content13 .content_h2{ margin-top:36px !important;}
+		   .content11 .content_h2{ margin-top:8px !important;}      
+			.content14 {float:left; width:30%;}
+			 .content15 {float:right; width:69%;}
+			  .content15 p{font: normal /*36px*/2.25em  'PF Din Text Pro Light',"Open Sans", Verdana, Geneva, sans-serif;
+		                   line-height:1.1;/*междустрочный интервал*/ 
+						   text-align:center; 
+						   padding-top:12px;
+						   padding-bottom:10px;
+						   }
+	.content15 p strike	{ color:#a2a6a7;}	
+	 .content15 p span{ font-size:/**/2em; color:#ff0000 !important;}    
+	  .content15 img {display:block; margin:0 auto;}
+	   #content14_img{ margin-top:15% !important; max-width:100%;}
+		#content15_img_top{ margin-top:4% !important; max-width:100%;}
+		 .content15 a, .content6 a { text-decoration:none !important; color:#000 !important;}   							    
+          .content15 a:hover, .content6 a:hover { color:#ff0000 !important;} 
+		   .content_h2	img{ display:block; margin:0 auto;}	
+			.content_h3 img{ display:block; margin:0 auto;}	 
+			 .content4 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content11 h2, .content13 h2 
+			                 { font: normal /*48px*/ 3em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+		                       line-height:1.0;/*междустрочный интервал*/ 
+						       text-align:center;}
+				.content12 h2{ font: normal /*47px*/2.93em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+		                       line-height:1.0;/*междустрочный интервал*/ 
+						       text-align:center;}	
+				 .content13 h2{ margin-bottom:7px !important;}
+				  .content7 h2 span, .content13 h2 span { color:#ff0000 !important;}		 
+				 .content10 h3{ font: normal 40px ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+
+		                        line-height:1.0;/*междустрочный интервал*/ 
+						        text-align:center;
+								margin-top:15px;}					  		       					     
+ 
+ /* ************************************************************** */
+ /* -------------------- PERVIY DISPLAY ------------------------- */
+   .content1 h2{font-family:ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif; 
+                font-size:3em !important;/*48px*/  
+                font-weight:normal !important;  
+				line-height:1.0;/*междустрочный интервал*/
+				padding:37px 40px 0 0; 
+				text-align:right;
+				} 		
+	.content1 h2 span{ color:#949393;}
+     .content3 a{ text-decoration:none; color:#000 !important; }	
+	  .content3 input{ background:none; border:none; padding:2px; width:80%;} 
+	  
+	  button.button_zakaz_nabor { display:block;
+                           margin:6px auto 0 auto;
+	                       background: url(../images_test/bacgraund_button.png) top no-repeat;
+                           border: none;
+                           color: #000;
+                           font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                           line-height: 1;
+                           padding: 30px 0 27px 0;
+                           text-align: center;
+                           width:262px;
+                           height:84px;}
+	    button.button_zakaz_nabor:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;
+		                                 color: #ff0000;
+		                                 cursor: pointer;}	
+        button.button_zakaz_nabor:active {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;
+		                                  color: #ff0000;
+		                                  cursor: pointer;} 
+		  #button_zakaz_nabor { display:block;
+                           margin:6px auto 0 auto;
+	                       background: url(../images_test/bacgraund_button.png) top no-repeat;
+                           border: none;
+                           color: #000;
+                           font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                           line-height: 1;
+                           padding: 30px 0 27px 0;
+                           text-align: center;
+                           width:262px;
+                           height:84px;}
+	        #button_zakaz_nabor:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;color: #ff0000;}	 
+/* table */ 
+
+ .tbl_zakaz_nabor {width:100%;  
+                   margin:0;
+				   font: normal /*14px*//*12px*/.75em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+				   color:#000;
+				   text-align:center;
+				  }
+  .zakaz_nabor_left{width:20%;text-align:right;} 
+   .zakaz_nabor_txt{vertical-align:middle; width:60%;}	
+    .zakaz_nabor_right{width:20%;}
+	
+
+
+/* ************************************************************** */
+/* -------------------- PREIMUCHESTVA ------------------------- */
+.preimuchestva { background: #e1787d url(../images_test/preimuchestva.jpg) top left repeat;  
+		         height:112px; 
+		         border-bottom:1px solid #ffffff;
+		         overflow:hidden;} 
+  .box_content4 { width:100%; /*overflow:hidden;*/}
+  .left_con_4, .center_con_4, .right_con_4 { width:33%; float:left; text-align:center; }
+   .left_con_4 img, .center_con_4 img, .right_con_4 img{padding-top:4px;}
+	.left_con_4 p, .center_con_4 p, .right_con_4 p { font-family:'PF Din Text Pro Light',"Open Sans", Verdana, Geneva, sans-serif; 
+	                                                 font-weight:normal !important; font-size:/*18px*/1.1em !important/*14px*/; 
+	                                                 color:#fff; }
+	
+	
+
+/* ************************************************************** */
+/* -------------------- PRIMERY RABOT ------------------------- */
+.primery_rabot { background: #e1787d url(../images_test/primery.jpg) top left repeat; 
+		         height:350px;/*330px !!!!!*/ 
+		         border-bottom:10px solid #ffffff;
+		         overflow:hidden;} 			
+ .slider_primery { margin:30px 0 0 0; width:100%; height:195px;}
+ 
+
+/* ************************************************************** */
+/* ----------------SLIDERS PRYMERY RABOT ---------------------- */					  
+.carousel  {
+   width: 99%; /* ширина всего блока */
+   margin: 0 auto;}
+   .carousel-wrapper {margin: 10px 30px; /* отступы для стрелок */
+                      overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+                      position:relative;}
+       .carousel-items {width: 10000px; /* 10000px; устанавливаем большую ширину для набора элементов */
+                        position: relative; /* позиционируем блок относительно основной области карусели */
+                                        }
+           .carousel-block {float: left; /* выстраиваем все элементы карусели в ряд */
+                            width: 238px; /*250px  задаём ширину каждого элемента */
+                            height:170px;
+                            border:1px solid #ccc;
+                            margin: 0 10px; /* делаем оступы, чтобы элементы не сливались */
+                            padding: 10px 10px 10px 10px; /* делаем оступы, чтобы элементы не сливались */
+                            background:#fff;
+                            box-shadow:#ccc .15em .15em .15em; }
+                  .carousel-block img{display:block;}/*ОТКРЫВАЕМ ЕСЛИ В КАРУСЕЛИ ТОЛЬКО КАРТИНКИ !!!!!!!!*/
+ 
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{width: 20px; 
+                                                  height: 140px; 
+                                                  position: relative;
+                                                  top:22px;
+                                                  cursor: pointer; 
+                                                  text-decoration:none;}
+           .carousel-button-left a{left:10px;
+                                   float: left; 
+                                   background: url(../images_test/nav_left.png); }
+              .carousel-button-left a:hover{background: url(../images_test/nav_left_activ.png);}
+               .carousel-button-right a{float: right;
+                                        background: url(../images_test/nav_right.png); }
+                     .carousel-button-right a:hover{background: url(../images_test/nav_right_activ.png);}	
+
+
+/* ************************************************************** */
+/* -------------------- SOSTAV NABORA ------------------------- */
+.sostav_nabora { background: #e1787d url(../images_test/sostav_nabora.jpg) top left repeat;  
+		         height:600px; 
+		         border-bottom:3px solid #ffffff;
+		         overflow:hidden;
+				 position:relative;} 			  
+  .sostav_nabora p{ font-family: ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;font-size:28px; text-align:center;} 
+   .content6 {height:600px; position:relative;}
+      #button_zakaz { display:block;
+                      margin:340px auto 0 auto;
+	                  background: url(../images_test/bacgraund_button.png) top no-repeat;
+                      border: none;
+                      color: #000;
+                      font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                      line-height: 1;
+                      padding: 30px 0 27px 0;
+                      text-align: center;
+                      width:262px;
+                      height:50px;}
+	    #button_zakaz:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;color: #ff0000;}	
+         #sostav_nabora1{display:block; position:absolute; top:150px; left:21%; z-index:16; max-width:100%;}
+          #sostav_nabora2{display:block; position:absolute; top:150px; right:20%; z-index:16;max-width:100%;}
+           #sostav_nabora3{display:block; position:absolute; top:350px; left:4%; z-index:16;max-width:100%;}
+            #sostav_nabora4{display:block; position:absolute; top:350px; right:3%; z-index:16;max-width:100%;}
+             #sostav_p1	{display:block; position:absolute; top:350px; left:28%; z-index:17;}
+              #sostav_p2 {display:block; position:absolute; top:350px; right:26%; z-index:17;}
+               #sostav_p3 {display:block; position:absolute; top:550px; left:10%; z-index:17;}
+                #sostav_p4 {display:block; position:absolute; top:550px; right:1%; z-index:17;}
+
+ 
+ 
+/* ************************************************************** */
+/* ------------------------- SALE ------------------------------- */
+         .sale { background: #e1787d url(../images_test/sale.jpg) top left repeat; 
+		         height:266px; 
+		         border-bottom:3px solid #ffffff;
+		         overflow:hidden;} 
+			.sale p { text-align:center; 
+			          font-family: 'PF Din Text Pro Light',"Open Sans", Verdana, Geneva, sans-serif !important;
+					  font-weight:normal !important;
+					  font-size:/*48px*/ 2.7em !important;
+					  padding-top:15px;}
+			  .sale p b{ color:#ff0000;
+			             /*font-weight:normal !important;*/
+					     /*font-size:/*38px*//* 2.37em !important;*/}	  
+			
+
+			
+/* ************************************************************** */			   
+/* ------------------- VIBOR FORMAT ----------------------------- */
+.format { background: #e1787d url(../images_test/sostav_nabora.jpg) top left repeat; 
+		  height:410px; 
+		  border-bottom:6px solid #ffffff;
+		  overflow:hidden;}
+.box_ul8 { width:100%; overflow:hidden;}
+ .box_ul8 ul{ display:block; width:100%; overflow:hidden; }
+  .box_ul8 ul li{ display:block; float:left; width:13%; text-align:center; margin:0 2px;} 
+   .box_content8 {width:100%; overflow:hidden; text-align:center;}
+    .box_format1, .box_format2, .box_format3, .box_format4, .box_format5, .box_format6, .box_format7 
+                  {float:left;
+                   width:13%;
+				   background:#FFF;
+				   border:1px solid #ccc;
+				   margin:0 1px;}
+  .box_format1 span, .box_format2 span, .box_format3 span, .box_format4 span, .box_format5 span, .box_format6 span, .box_format7 span
+    { display:block; 
+	  font: normal /*48px*//*38px*/ 2.37em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	  color: #eae9e9; 
+	  text-align:center; 
+	  margin-bottom:7px;}  
+   .box_format1 p, .box_format2 p, .box_format3 p, .box_format4 p, .box_format5 p, .box_format6 p, .box_format7 p
+       {display:block; 
+	    font: normal /*14px*/.87em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	    color: #000; 
+	    text-align:center; 
+	    margin-bottom:7px;} 
+    .box_format1 span b, .box_format2 span b, .box_format3 span b, .box_format4 span b, .box_format5 span b, .box_format6 span b, .box_format7 span b
+	         {display:block; 
+	          font: bold /*10px*/.62em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+	          color: #ff0000; 
+	          text-align:center; 
+	          margin-bottom:7px;} 
+	 .box_format1{ height:150px;}
+	  .box_format2{height:160px;}
+	   .box_format3 {height:170px;}
+	    .box_format4 {height:180px;}
+		 .box_format5 {height:190px;}
+		  .box_format6 {height:200px;}
+		   .box_format7 {height:210px;}
+	 #a_format, #a_format1, #a_format2, #a_format3, #a_format4, #a_format5, #a_format6 
+	           {display:block; 
+	            font: bold /*14px*/.87em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+	            color: #000; 
+	            text-align:center;
+				background:#fcd3dd; 
+				border: 1px solid #000;
+				padding-top:2px;
+				text-decoration:none;
+				width:80%;
+				margin:0 auto;}
+        #a_format:hover, #a_format1:hover, #a_format2:hover, #a_format3:hover, #a_format4:hover, #a_format5:hover, #a_format6:hover 
+		        {color: #ff0000;}
+		  #a_format1 {margin-top:20px !important;}
+		   #a_format2 {margin-top:30px !important;}
+		    #a_format3 {margin-top:40px !important;}
+			 #a_format4 {margin-top:50px !important;}
+			  #a_format5 {margin-top:60px !important;}
+			   #a_format6 {margin-top:70px !important;}
+ 
+
+ 
+/* ************************************************************** */ 			   
+/* -------------------- ZAKAZ SHEMA ----------------------------- */
+.zakaz_shema{ background: #e1787d url(../images_test/sale.jpg) top left repeat; 
+		      height:400px; 
+		      border-bottom:6px solid #ffffff;
+		      overflow:hidden;} 
+				  
+/* tbl for form */
+.tbl_shema p{ font: normal /*12px*/.75em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;color: #000; padding-bottom:10px; } 
+ .tbl_shema { width:auto;  margin:10px auto; }
+  .tbl_shema td{ vertical-align:middle; padding:5px 10px 0 10px;}
+   .shema{ text-align: center !important; width: auto;border:1px solid #ccc; }
+    
+	 
+	 
+/* ************************************************************** */
+/* -------------------- VIBOR KLIENTOV ------------------------- */
+.klienty_hidden { display:none;}
+.klienty_swou { display:block;}
+.vibor_client{ background: #e1787d url(../images_test/sostav_nabora.jpg) top left repeat; 
+		       height:530px; 
+		       border-bottom:10px solid #ffffff;
+		       overflow:hidden; }  
+			   
+/* table */ 
+.vibor_klienty p{ font: normal /*24px*/1.4em 'PF Din Text Pro Light',"Open Sans", Verdana, Geneva, sans-serif;
+	              color: #000; } 
+ .vibor_klienty { width:auto;  margin:20px 0 0 0;}
+  .vibor_klienty td{ vertical-align:middle; padding:10px 10px 0 10px;}
+   .vibor-txt_left{ text-align:right !important; width:40%; }
+    .vibor-txt_right{ text-align: left !important;width:40%; }
+     .vibor-img{ vertical-align:middle; text-align:center; width:10%;}
+      
+      		   
+
+
+/* ************************************************************** */			   		   
+/* -------------------- SDELAT ZAKAZ ------------------------- */
+  .sdelat_zakaz{ background: #e1787d url(../images_test/sdelat_zakaz.jpg) top left repeat; 
+		         height:600px; 
+		         border-bottom:3px solid #ffffff;
+		         overflow:hidden; }
+    .content11 {position:relative;}			
+      .content11 p{	font: normal /*18px*//*14px*/.87em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+	                color:#000;
+					text-align:center;}	
+		.content11 a{ text-decoration:none; color:#000 !important;}	
+					
+#chek_zakaz1{display:block; position:absolute; top:100px; left:10%; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:100px; left:47%; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:100px; right:10%; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:320px; left:10%; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:320px; left:47%; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:320px; right:10%; z-index:16; max-width:100%;}
+	  #chek_zakaz7{display:block; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:block; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:block; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:block; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:block; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:block; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:block; position:absolute; top:210px; right:14%; z-index:16; max-width:100%;}
+ 
+    #chek_p1 {display:block; position:absolute; top:180px; left:7%; z-index:17;}
+     #chek_p2 {display:block; position:absolute; top:180px; left:43%; z-index:17;}
+      #chek_p3 {display:block; position:absolute; top:180px; right:15%; z-index:17;}
+       #chek_p4 {display:block; position:absolute; top:400px; left:16%; z-index:17;}
+        #chek_p5 {display:block; position:absolute; top:400px; left:39%; z-index:17;}
+         #chek_p6 {display:block; position:absolute; top:400px; right:6%; z-index:17;} 	
+
+     #button_format { display:block;
+                      margin:370px auto 0 auto;
+	                  background: url(../images_test/bacgraund_button.png) top no-repeat;
+                      border: none;
+                      color: #000;
+                      font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                      line-height: 1;
+                      padding: 30px 0 27px 0;
+                      text-align: center;
+                      width:262px;
+                      height:50px;}
+	    #button_format:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;color: #ff0000;}	
+        #button_sdelat_zakaz { display:block;
+                      margin:370px auto 0 auto;
+	                  background: url(../images_test/bacgraund_button.png) top no-repeat;
+                      border: none;
+                      color: #000;
+                      font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                      line-height: 1;
+                      padding: 30px 0 27px 0;
+                      text-align: center;
+                      width:262px;
+                      height:50px;}
+	    #button_sdelat_zakaz:hover {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;color: #ff0000;}	
+		 
+
+/* ************************************************************** */
+/* -------------------- OTZIV KLIENTOV ------------------------- */
+         .otziv{ background: #e1787d url(../images_test/otziv.jpg) top left repeat; 
+		         height:460px; 
+		         border-bottom:3px solid #ffffff;
+		         overflow:hidden; } 
+			 .slider_otzivy { margin:30px 0 0 0;}
+			 
+/* ------------------ SLIDERS OTZIVY -------------------------- */					  
+.carousel_top  {width: 99%; /* ширина всего блока */
+                margin: 0 auto;
+               }
+ .carousel-block_top img{display:block;}/*ОТКРЫВАЕМ ЕСЛИ В КАРУСЕЛИ ТОЛЬКО КАРТИНКИ !!!!!!!!*/ 
+  .carousel-wrapper_top {margin: 10px 30px; /* отступы для стрелок */
+                          overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+                          position:relative;
+                        }
+   .carousel-items_top {width: 10000px; /* 10000px; устанавливаем большую ширину для набора элементов */
+                         position: relative; /* позиционируем блок относительно основной области карусели */
+                       }
+     .carousel-block_top {float: left; /* выстраиваем все элементы карусели в ряд */
+                          width: 800px; /*90%*/
+                          height:250px;
+                          margin: 0 10px; /* делаем оступы, чтобы элементы не сливались */
+                          padding: 10px 10px 10px 10px; /* делаем оступы, чтобы элементы не сливались */
+                          /*background:#f2f2f2;*/ 
+						  background: url(../images_test/backraund_otzyv.png) top no-repeat;/* */
+                         }
+       .carousel-block_top h4{ display:block;
+                               width:350px;/*30%*/
+                               font: bold /*24px*/1em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                           color: #000; 
+	                           text-align: left;
+							   padding-bottom:20px;
+							   padding-left:30px;
+					           }
+		 				   
+           .carousel-block_top p{ display:block;
+                                  width:90%;/*30%*/
+                                  font: normal /*14px*/.87em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                              color: #000; 
+	                              text-align: justify;
+								  padding-left:30px !important;
+								  padding-bottom:10px;
+								  text-indent:2.5em;/*Красная строка*/
+					              }
+/* table */ 
+
+ .otziv_bloc { width:auto;  margin:0;}
+  .otziv_bloc td{padding:10px;}
+   .otziv_img{width:25%; }
+    .otziv_txt{ width:60%; }
+     .otziv_img2{width:15%;}                  				   
+      
+/*********** BUTTONS ***********/
+    .carousel-button-left_top a, .carousel-button-right_top a{width: 20px; 
+                                                              height: 140px; 
+                                                              position: relative;
+                                                              top:70px;
+                                                              cursor: pointer; 
+                                                              text-decoration:none;}
+
+         .carousel-button-left_top a{left:10px;
+                                      float: left; 
+                                      background: url(../images_test/nav_left.png); }
+           .carousel-button-left_top a:hover{background: url(../images_test/nav_left_activ.png);}
+            .carousel-button-right_top a{float: right;
+                                         background: url(../images_test/nav_right.png);}
+              .carousel-button-right_top a:hover{background: url(../images_test/nav_right_activ.png);}			 
+			 
+
+			 
+/* ************************************************************** */			   
+/* -------------------- USPEY ZAKAZAT ------------------------- */
+ .uspey_zakazat{ background: #e1787d url(../images_test/sostav_nabora.jpg) top left repeat; 
+		         height:700px; 
+		         border-bottom:3px solid #ffffff;
+		         overflow:hidden;}    					      			   
+ .content13{position:relative;}  
+   .content13 p{	font: normal /*25px*/1.56em "Poiret One Regular",ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif; 
+	                color:#000;
+					text-align:center;}
+	.content13 p b{	font: normal /*30px*//*24px*/1.5em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+	                color:#ff0000;
+					text-align:center;}
+	 .content13 p strike {	font: normal /*26px*/ 1.2em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+	                        color:#bab7b6;
+					        text-align:center;}										
+	   .content13 p span {	font: normal /*30px*/1.5em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+	                        color:#ff0000;
+					        text-align:center;}	
+		.content13 a{ text-decoration:none; color:#000 !important;}	
+
+#sales_zakaz1{display:block; position:absolute; top:160px; left:12%; z-index:16;}
+ #sales_zakaz2{display:block; position:absolute; top:160px; left:27%; z-index:16;}
+  #sales_zakaz3{display:block; position:absolute; top:250px; left:1%; z-index:16;}
+   #sales_zakaz4{display:block; position:absolute; top:250px; left:37%; z-index:16;}
+    #sales_zakaz5{display:block; position:absolute; top:200px; right:30%; z-index:16;}
+     #sales_zakaz6{display:block; position:absolute; top:160px; right:50%; z-index:16;}
+	 
+    #sales_p1 {display:block; position:absolute; top:270px; left:15%; z-index:17; }
+     #sales_p2 {display:block; position:absolute; top:270px; left:28%; z-index:17;}
+      #sales_p3 {display:block; position:absolute; top:365px; left:4%; z-index:17;}
+       #sales_p4 {display:block; position:absolute; top:365px; left:36%; z-index:17;}
+        #sales_p5 {display:block; position:absolute; top:440px; left:30px; z-index:17;font-size:.87em !important;}
+         #sales_p6 {display:block; position:absolute; top:338px; left:21%; z-index:17;font-size:.87em !important;}
+		  #sales_p7 {display:block; position:absolute; top:210px; right:7%; z-index:17;}
+           #sales_p8 {display:block; position:absolute; top:330px; right:9%; z-index:17;font-size:.87em !important;}  
+             	 
+            #button_sales1 { display:block;
+	                                  background: url(../images_test/bacgraund_button.png) top no-repeat;
+                                      border: none;
+                                      color: #000;
+                                      font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                                      line-height: 1;
+                                      padding: 30px 0 27px 0;
+                                      text-align: center;
+                                      width:262px;
+                                      height:50px;
+									  margin:0 auto;}
+	          #button_sales2 { display:block;
+	                                  background: url(../images_test/bacgraund_button.png) top no-repeat;
+                                      border: none;
+                                      color: #000;
+                                      font: normal /*24px*/1.5em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                                      line-height: 1;
+                                      padding: 30px 0 27px 0;
+                                      text-align: center;
+                                      width:262px;
+                                      height:50px;
+									  margin:0 auto;}							 
+	           #button_sales1:hover, #button_sales2:hover 
+		        {background:url(../images_test/bacgraund_button_activ.png) top no-repeat;
+				 color: #ff0000;}
+.table_sales_box { width:100%; overflow:hidden; margin-top:340px;}
+ .box_button_sales1, .box_button_sales2 { width:49%; float:left; margin:0 auto; position:relative; height:200px;}           
+  .box_button_sales1 p {font: normal /*30px*//*24px*/1.5em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif; 
+	                    color:#000;
+			            text-align:left;}
+   .box_button_sales1 p img{ display:block; position:absolute; top:100px; left: 190px;}
+  
+  
+  
+/* ************************************************************** */  
+/* -------------------------- FUTER ----------------------------- */
+/* ************************************************************** */
+  .futer{ background: #e1787d url(../images_test/header.jpg) top left repeat; 
+		  width:100%; 
+		  height:70px; 
+		  border-bottom:1px solid #ffffff;
+		  overflow:hidden;
+		  }
+   .futer_content {
+                    max-width:900px; 
+					margin:0 auto;
+					position:relative;
+					}			
+	.futer_box_l {float:left; 
+	               width:25%;}
+	 .futer_box_m {float:left; 
+	                 width:48%;}
+	   .futer_box_c {float:left; 
+	                  width:27%; 
+	                  height:70px; 
+					  padding-top:15px;
+					  background:url(../images_test/icon_phone.jpg) left no-repeat;
+					  }
+	   .futer_logo, .futer_menu, .futer_contact {line-height:1.0;/*междустрочный интервал*/
+	                                                overflow:hidden; }
+	    .futer_logo { text-align:center; padding:8px 0 6px 0; }
+	     .futer_logo h1{ font-family: ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+		                  font-size:/*22px*/1.3em; font-weight:bold; color:#000; }
+	      .futer_logo span{ font-size:/*14px*/.83em; 
+		                     font-weight:normal; 
+		                     color:#fff; 
+		                     font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;}
+		.futer_menu{ width:90%; margin:0 auto;} 
+		 .futer_menu ul{display:table-row; list-style:none;}
+		  .futer_menu ul li{ display:table-cell; 
+		                      width:auto;
+							  height:70px; 
+							  vertical-align:middle;}
+		   .futer_menu ul li a{ display:block;
+		                         text-decoration: underline;
+		                         font-size:/*16px*/.8em; 
+		                         font-weight:normal; 
+		                         color:#fff; 
+		                         font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;
+								 padding:0 5px;
+								 vertical-align:middle; 
+								 height:70px; 
+								 display:table-cell;}
+		     .futer_menu ul li a:hover{ text-decoration: none;}
+		      .futer_contact { padding-left:55px; width:100%;}
+			   .futer_contact p{ 
+						 font-size:/*30px*/1.8em; 
+		                 font-weight:normal; 
+						 color:#fff; 
+						 font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;
+						 margin-bottom:6px;}
+		           .futer_contact span{ background:#72b335; 
+							 padding:2px; 
+		                     border:1px solid #fff; 
+		                     font-size:/*14px*/.82em; 
+		                     font-weight:normal; 
+		                     color:#fff; 
+		                     font-family:'PF Din Text Pro Light',Verdana, Geneva, sans-serif;}
+                      .futer_contact a{ text-decoration:none;color:#fff;}
+
+
+/* ************************************************************** */  
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+
+/* ---------------------- FORMS  loading FILES------------------- */  
+#file_holder { width:80%; overflow:hidden; margin:0 auto 10px auto; padding:10px; text-align:center; border:1px solid #ccc;}
+  #file_holder a{ text-decoration:none;}
+    #loading {display:none;}
+     .error, .error2 {color:#F00;}
+       .success, .success a {color:#009900;}
+		  
+	 			  
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+
+.form_windows{/*min-width:900px;*/ ; 
+              max-width:900px; 
+			  margin:0 auto;
+			  overflow:hidden;
+			  position:relative;
+			  text-align:center;}
+.adr-dostavki{ margin:0 30px; 
+               padding:10px;
+			   font-family: "Open Sans", Verdana, Geneva, sans-serif;
+			   overflow:hidden;
+			   }
+ .adr-dostavki h2{ font: bold /*20px*/1.25em "Open Sans", Verdana, Geneva, sans-serif;
+	               color: #000; text-align:center !important; padding-bottom:20px; } 			   
+  .adr-dostavki h3{ font: normal /*16px*/1em "Open Sans", Verdana, Geneva, sans-serif;
+	                color:#555; text-align:left !important;padding-bottom:15px;}		   
+   .adr-dostavki p { font: normal /*14px*/.87em "Open Sans", Verdana, Geneva, sans-serif;
+                     color:#555; } 
+	.adr-dostavki img { margin-top:15px;} 
+	  #img_form{ margin-top:0 !important; max-width:100%;}
+
+/* table */ 
+ .zakaz-data { width:80%;  margin:10px auto;}
+ .zakaz-data tr {padding-bottom:3px;}
+  .zakaz-data td { vertical-align:middle; padding:10px;}
+   .zakaz-txt{ font-size:/*12px*/.75em; text-align:right !important;width:10%; }
+    .zakaz-inpt{width:60%; margin-bottom:4px !important;}
+	 .zakaz-inpt input{font-size:/*14px*/.87em; padding:4px; color:#acabab; width:100%; margin-bottom:4px !important;}
+      .zakaz-error{ width:30%; }
+	   #name_error { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;} 
+	    #name_error2 { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;} 
+		 #name_error3 { font-size:/*14px*/.87em; color:#F00 !important; text-align: center !important;} 
+		  #email_error { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;}
+		   #email_error2 { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;} 	  	  				  								
+	        #phone_error { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;}
+		     #phone_error2 { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;}		    
+		      #adres_error { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;}
+		       #adres_error2 { font-size:/*14px*/.87em; color:#F00 !important; text-align: left !important;}
+		  																			
+.file_holder_button { display:block;}
+ #button_zakaz_shema { display:block;
+                       margin:0 auto;
+                       background: #e3e3e3;
+                       border: 1px solid #bbb;
+                       -webkit-border-radius: 3px;
+                       -moz-border-radius: 3px;
+                       -ms-border-radius: 3px;
+                       -o-border-radius: 3px;
+                       border-radius: 3px;
+                       -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+                       -moz-box-shadow: inset 0 0 1px 1px #f6f6f6;
+                       -ms-box-shadow: inset 0 0 1px 1px #f6f6f6;
+                       -o-box-shadow: inset 0 0 1px 1px #f6f6f6;
+                       box-shadow: inset 0 0 1px 1px #f6f6f6;
+                       color: #333;
+                       font: bold /*12px*/.7em "helvetica neue", helvetica, arial, sans-serif;
+                       line-height: 1;
+                       padding: 5px 0 6px 0;
+                       text-align: center;
+                       text-shadow: 0 1px 0 #fff;
+                       width: 150px;   }
+	        #button_zakaz_shema:hover {background: #d9d9d9;
+                                       -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+                                       -moz-box-shadow: inset 0 0 1px 1px #eaeaea;
+                                       -ms-box-shadow: inset 0 0 1px 1px #eaeaea;
+                                       -o-box-shadow: inset 0 0 1px 1px #eaeaea;
+                                       box-shadow: inset 0 0 1px 1px #eaeaea;
+                                       color: #222;
+                                       cursor: pointer;}	
+
+.button, .button2, .button3, .button4{
+  background-color: #ee432e;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee432e), color-stop(50%, #c63929), color-stop(50%, #b51700), color-stop(100%, #891100));
+  background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  border: 1px solid #951100;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  color: #fff;
+  font: bold /*12px*/.75em "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+  width: 150px;
+  heigth: auto;  }
+  .button:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: #f37873;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f37873), color-stop(50%, #db504d), color-stop(50%, #cb0500), color-stop(100%, #a20601));
+    background-image: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    cursor: pointer; }
+  .button:active, .button2:active, .button3:active, .button4:active {
+    background-color: #d43c28;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d43c28), color-stop(50%, #ad3224), color-stop(50%, #9c1500), color-stop(100%, #700d00));
+    background-image: -webkit-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -ms-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -o-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4); }
+	
+@media screen and ( max-width: 899px)
+{ 
+.width_img { max-width:80%;}
+ .width_img_tbl{ max-width:80%;}
+  .width_img_form{ max-width:80%;}
+   .width_nabor_img{ max-width:100%;}
+    .no_width_img{ max-width:100%;}
+/* ************************************************************** */
+/* ----------------------- HEADER ------------------------------- */
+/* ************************************************************** */
+   .img_pos {right:-105px;/*!!!*/}				
+	.header_logo h1{font-size:1.2em;/*!!!*/ }
+	 .header_logo span{ font-size:.7em;/*!!!*/ 
+		                 }
+	   .header_menu ul li a{
+		                    font-size:.7em;/*!!!*/ 
+		                      }
+		 .header_contact { padding-left:55px;}
+		  .header_contact p{ 
+						 font-size:1.5em;/*!!!*/ 
+		                    }
+		    .header_contact span{ 
+		                     font-size:.7em;/*!!!*/ 
+		                          }
+                     
+/*---------------------------------- content ---------------------------------------------------*/
+  .content1 h2{font-size:2.5em !important;/*!!!*/  
+                padding:37px 20px 0 0;/*!!!*/ } 
+				
+/* ---------------- PRYMERY RABOT 3 foto ---------------------- */				 
+/*.primery_rabot{ height:320px;
+                border-bottom:15px solid #ffffff;}
+.content5 .content_h2 { margin-top:30px;}*/
+								
+/* ----------------SLIDERS PRYMERY RABOT 3 foto---------------------- */					  
+    /*.slider_primery { width:94%;}   
+	   .carousel { width:90%;}    
+		   .carousel-block {width: 210px; 
+                            padding: 10px 5px 10px 5px; 
+                            height:150px;}
+			.carousel-button-left a, .carousel-button-right a { top:10px;}	*/						  
+         
+/* ---------------- PRYMERY RABOT 2 foto ---------------------- */				 
+.primery_rabot{ height:320px;
+                border-bottom:15px solid #ffffff;}
+.content5 .content_h2 { margin-top:30px;}/**/
+								
+/* ----------------SLIDERS PRYMERY RABOT 2 foto---------------------- */					  
+    .slider_primery { width:94%; margin:0 auto;}   
+	   .carousel { width:540px;}    
+		   .carousel-block {width: 210px; 
+                            padding: 10px 5px 10px 5px; 
+                            height:150px;}
+			.carousel-button-left a, .carousel-button-right a { top:10px;}/*	*/	
+
+
+
+/* ---------------- PRYMERY RABOT 1 foto ---------------------- */				 
+/*.primery_rabot{ height:290px;
+                border-bottom:15px solid #ffffff;}	*/	
+								
+/* ----------------SLIDERS PRYMERY RABOT 1 foto ---------------------- */					  
+      /*.carousel { width:295px;}    
+		   .carousel-block {width: 250px;}
+                            height:150px;}
+			.carousel-button-left a, .carousel-button-right a { top:10px;}			*/	 
+
+/* ---------------------- PREIMUCHESTVA --------------------------*/		 				
+.left_con_4 p, .center_con_4 p, .right_con_4 p { font-size:.9em !important;/*!!!*/ }
+
+/* ------------------------- SALE ------------------------------- */
+			.sale p { 
+					  font-size:2.3em !important/*!!!*/ ;
+					  }
+					  
+/* ------------------------- SHEMA ----------------------*/			
+.zakaz_shema { height:360px;/*!!!*/}
+.content15 p { font-size:1.7em;/*!!!*/}
+ .content15 p span{ font-size:1.5em;/*!!!*/}
+ 	
+/* ------------------------- VIBOR KLIENTOV  ----------------------*/ 
+.vibor_klienty p { font-size:1em;}
+
+/* -------------------- NABOR ------------------------- */
+       .sostav_nabora p{ font-size:1.4em;}  
+		 
+		 #sostav_nabora1{display:block; position:absolute; top:150px; left:17%; z-index:16; max-width:100%;}
+          #sostav_nabora2{display:block; position:absolute; top:150px; right:16%; z-index:16;max-width:100%;}
+           #sostav_nabora3{display:block; position:absolute; top:350px; left:1%; z-index:16;max-width:100%;}
+            #sostav_nabora4{display:block; position:absolute; top:350px; right:1%; z-index:16;max-width:100%;}
+             #sostav_p1	{display:block; position:absolute; top:350px; left:28%; z-index:17;}
+              #sostav_p2 {display:block; position:absolute; top:350px; right:28%; z-index:17;}
+               #sostav_p3 {display:block; position:absolute; top:550px; left:10%; z-index:17;}
+                #sostav_p4 {display:block; position:absolute; top:550px; right:1%; z-index:17;}
+				
+/* ------------------------------ FORMAT ---------------------------------------*/
+.format{ height:440px;}
+.box_format1 span, .box_format2 span, .box_format3 span, .box_format4 span, .box_format5 span, .box_format6 span, .box_format7 span {font-size:2.3em; /* !!! */}
+.box_format1 p, .box_format2 p, .box_format3 p, .box_format4 p, .box_format5 p, .box_format6 p, .box_format7 p { font-size:.8em;/* !!! */}
+.box_format1 span b, .box_format2 span b, .box_format3 span b, .box_format4 span b, .box_format5 span b, .box_format6 span b, .box_format7 span b{ font-size:.62em;/* !!! */}
+
+/* -------------------- OTZIV KLIENTOV ------------------------- */
+    .slider_otzivy { width:700px; margin:30px auto 0 auto;}
+	.carousel_top{ width:85%; margin:0 auto;}		 
+/* ------------------ SLIDERS OTZIVY -------------------------- */					  
+     .carousel-block_top {
+                          width: 500px; /*800px*/
+                          height:220px;
+                         }
+       .carousel-block_top h4{width: auto;/*350px*/}			   
+        .carousel-block_top p{width: auto;/*30%*/
+                              font: normal /*14px*/.76em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                          padding-left:10px !important;}
+/* table */ 
+   .otziv_bloc { vertical-align:top;}
+    .otziv_txt{ width:60%;}
+	 
+/*********** BUTTONS ***********/
+    .carousel-button-left_top a, .carousel-button-right_top a{top:30px; }	      		   
+
+/* -------------------- KAK ZDELAT ZAKAZ ------------------------- */ 
+ #chek_zakaz1{display:block; position:absolute; top:100px; left:10%; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:100px; left:47%; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:100px; right:10%; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:320px; left:10%; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:320px; left:47%; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:320px; right:10%; z-index:16; max-width:100%;}
+	  #chek_zakaz7{display:block; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:block; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:block; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:block; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:block; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:block; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:block; position:absolute; top:210px; right:15%; z-index:16; max-width:100%;}   
+
+	#chek_p1 {display:block; position:absolute; top:180px; left:7%; z-index:17;}
+     #chek_p2 {display:block; position:absolute; top:180px; left:43%; z-index:17;}
+      #chek_p3 {display:block; position:absolute; top:180px; right:15%; z-index:17;}
+       #chek_p4 {display:block; position:absolute; top:400px; left:16%; z-index:17;}
+        #chek_p5 {display:block; position:absolute; top:400px; left:39%; z-index:17;}
+         #chek_p6 {display:block; position:absolute; top:400px; right:6%; z-index:17;} 
+		 	
+/* -------------------- VIBOR KLIENTA --------------------------*/
+.vibor_client { height:450px;}
+
+/* -------------------- USPEY ZAKAZAT ------------------------- */
+#sales_zakaz1{display:block; position:absolute; top:160px; left:12%; z-index:16;}
+ #sales_zakaz2{display:block; position:absolute; top:160px; left:27%; z-index:16;}
+  #sales_zakaz3{display:block; position:absolute; top:250px; left:1%; z-index:16;}
+   #sales_zakaz4{display:block; position:absolute; top:250px; left:37%; z-index:16;}
+    #sales_zakaz5{display:block; position:absolute; top:160px; right:10%; z-index:16;}
+     #sales_zakaz6{display:block; position:absolute; top:160px; right:44%; z-index:16;}
+	 
+    #sales_p1 {display:block; position:absolute; top:270px; left:17%; z-index:17;font-size:1.1em !important; }
+     #sales_p2 {display:block; position:absolute; top:270px; left:28%; z-index:17;font-size:1.1em !important;}
+      #sales_p3 {display:block; position:absolute; top:365px; left:4%; z-index:17;font-size:1.1em !important;}
+       #sales_p4 {display:block; position:absolute; top:365px; left:36%; z-index:17;font-size:1.1em !important;}
+        #sales_p5 {display:block; position:absolute; top:440px; left:1%; z-index:17;font-size:.8em !important;}
+         #sales_p6 {display:block; position:absolute; top:338px; left:21%; z-index:17;font-size:.8em !important;}
+		  #sales_p7 {display:block; position:absolute; top:310px; right:7%; z-index:17;font-size:1.3em !important;}
+           #sales_p8 {display:block; position:absolute; top:400px; right:10%; z-index:17;font-size:.8em !important;}   			
+
+/* -------------------------- MODAL WINDOW -----------------------*/
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+#contact_form_show{ display: block;}
+#contact_form_hidden{ display: none;}
+
+/* ************************************************************** */  
+/* -------------------------- FUTER ----------------------------- */
+/* ************************************************************** */			
+	.futer_logo h1{font-size:1.2em;/*!!!*/ }
+	 .futer_logo span{ font-size:.7em;/*!!!*/ 
+		                 }
+	   .futer_menu ul li a{
+		                    font-size:.7em;/*!!!*/ 
+		                      }
+		 .futer_contact { padding-left:55px;}
+		  .futer_contact p{ 
+						 font-size:1.5em;/*!!!*/ 
+		                    }
+		    .futer_contact span{ 
+		                     font-size:.7em;/*!!!*/ 
+		                          }
+}
+@media screen and ( max-width: 877px)
+{ 
+.img_pos {right:-110px;/*!!!*/}	
+
+}
+
+@media screen and ( max-width: 805px)
+{
+.width_img { max-width:70%;}
+ 
+/*----  HEADER -----*/	 
+ .header{
+		  height: auto;/*!!!*/ 
+		  position: relative;/*!!!*/ 
+		  }
+   .img_pos {left:73%;  
+			 max-width:50%;
+			 top:80px;}			
+	.header_box_l {float:none; /*!!!*/ 
+	               width:100%;/*!!!*/ border-bottom:1px solid #dbd40a;/*!!!*/ }
+	 .header_box_m {float:none;/*!!!*/  
+	               width:100%;/*!!!*/ border-bottom:1px solid #dbd40a;/*!!!*/ }
+	   .header_box_c {float:none;/*!!!*/  
+	                  width:33%;/*!!!*/ 
+	                  height: auto; /*!!!*/ 
+					  padding-top:5px;/*!!!*/
+					  padding-bottom:5px;/*!!!*/
+					  margin:0 auto; 
+					  }
+	     .header_logo h1{ 
+		                  font-size:/*22px*/1.5em;/*!!!*/ }
+	      .header_logo span{ font-size:/*14px*/.83em;/*!!!*/  
+		                     font-weight:normal; 
+		                    }
+		.header_menu{ width:50%;/*!!!*/} 
+		 .header_menu ul{display:table-row; list-style:none;}
+		  .header_menu ul li{ 
+							  height:40px;/*!!!*/  
+							  }
+		   .header_menu ul li a{ 
+		                         font-size:/*16px*/.8em; /*!!!*/   
+								 height:40px;/*!!!*/  
+								 }
+			   .header_contact p{ 
+						 font-size:/*30px*/1.6em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .header_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }
+/* ----- CONTENT -------*/							 
+.display_box { padding-top:2px;/*!!!*/}
+.content4 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content11 h2, .content13 h2{font-size:2.6em;/*!!!*/}
+
+/* ----- 1 display  -------*/		
+.display_content1 { height:530px;}
+ .content1 h2 {font-size:2.3em !important;/*!!!*/}
+  .content2 img { margin-left:20%;/*!!!*/}
+/*------ PREIMUCHESTVA -------*/
+.left_con_4 p, .center_con_4 p, .right_con_4 p{font-size:.75em !important;/*!!!*/}
+/* ----- SALE -------*/							 
+.sale p { font-size:2em !important;} 
+/*----  FUTER -----*/	 
+ .futer{
+		  height: auto;/*!!!*/ 
+		  position: relative;/*!!!*/ 
+		  }				
+	.futer_box_l {float:none; /*!!!*/ 
+	               width:100%;/*!!!*/ border-bottom:1px solid #dbd40a;/*!!!*/ }
+	 .futer_box_m {float:none;/*!!!*/  
+	               width:100%;/*!!!*/ border-bottom:1px solid #dbd40a;/*!!!*/ }
+	   .futer_box_c {float:none;/*!!!*/  
+	                  width:33%;/*!!!*/ 
+	                  height: auto; /*!!!*/ 
+					  padding-top:5px;/*!!!*/
+					  padding-bottom:5px;/*!!!*/
+					  margin:0 auto; 
+					  }
+	     .futer_logo h1{ 
+		                  font-size:/*22px*/1.5em;/*!!!*/ }
+	      .futer_logo span{ font-size:/*14px*/.83em;/*!!!*/  
+		                     font-weight:normal; 
+		                    }
+		.futer_menu{ width:50%;/*!!!*/} 
+		 .futer_menu ul{display:table-row; list-style:none;}
+		  .futer_menu ul li{ 
+							  height:40px;/*!!!*/  
+							  }
+		   .futer_menu ul li a{ 
+		                         font-size:/*16px*/.8em; /*!!!*/   
+								 height:40px;/*!!!*/  
+								 }
+			   .futer_contact p{ 
+						 font-size:/*30px*/1.6em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .futer_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }                 
+}
+
+@media screen and ( max-width: 805px)
+{
+/*----  HEADER -----*/	 
+		   .header_menu ul li a{ 
+		                         font-size:/*16px*/.7em; /*!!!*/   
+								 height:40px;/*!!!*/  
+								 }
+/*----  FUTER -----*/	 
+		   .futer_menu ul li a{ 
+		                         font-size:/*16px*/.7em; /*!!!*/   
+								 height:40px;/*!!!*/  
+								 }								 
+}
+@media screen and ( max-width: 698px)
+{
+/*----  HEADER -----*/	 
+   .img_pos {left:73%;/*!!!*/  
+			 max-width:50%;/*!!!*/
+			 top:140px;/*!!!*/}	
+		.header_menu { width:19%;/*!!!*/}	 	
+		 .header_menu ul{display: block;/*!!!*/ }
+		  .header_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .header_menu ul li a{ 
+		                         font-size:/*16px*/.88em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .header_contact p{ 
+						 font-size:/*30px*/1.5em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .header_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }							 
+/* ----- CONTENT -------*/
+.content4 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content11 h2, .content13 h2 { font-size:2.3em;}
+/* ----- 1 display  -------*/		
+ .content1 h2 {font-size:2.2em !important;/*!!!*/}
+  .content2 img { margin-left:10%;/*!!!*/}
+/* -------------------- SOSTAV NABORA ------------------------- */
+.sostav_nabora { 
+		         height:600px; 
+		        } 			  
+   .content6 {height:600px; position:relative;}
+     	
+         #sostav_nabora1{display:block; position:absolute; top:150px; left:21%; z-index:16; max-width:25%;}
+          #sostav_nabora2{display:block; position:absolute; top:150px; right:20%; z-index:16;max-width:25%;}
+           #sostav_nabora3{display:block; position:absolute; top:320px; left:4%; z-index:16;max-width:25%;}
+            #sostav_nabora4{display:block; position:absolute; top:320px; right:3%; z-index:16;max-width:25%;}
+             
+			 #sostav_p1	{display:block; position:absolute; top:320px; left:28%; z-index:17;}
+              #sostav_p2 {display:block; position:absolute; top:320px; right:26%; z-index:17;}
+               #sostav_p3 {display:block; position:absolute; top:500px; left:10%; z-index:17;}
+                #sostav_p4 {display:block; position:absolute; top:500px; right:1%; z-index:17;}  
+#button_zakaz { margin:400px auto 0 auto;/*!!!*/} 
+/* ----- SALE -------*/							 
+.sale { height:236px;}
+.sale p { font-size:1.6em !important;} 
+
+/* -------------------- SDELAT ZAKAZ ------------------------- */
+
+			#chek_zakaz13{display:block; position:absolute; top:210px; right:14%; z-index:16; max-width:70%;}
+ 
+/* -------------------- OTZIV KLIENTOV ------------------------- */
+   .otziv { height:560px;}
+	.slider_otzivy { width:500px; margin:30px auto 0 auto;}
+	.carousel_top{ width:85%; margin:0 auto;}		 
+/* ------------------ SLIDERS OTZIVY -------------------------- */					  
+   .carousel-button-left_top a, .carousel-button-right_top a { top:70px;}  
+	 .carousel-block_top {
+                          width: 500px; /*800px*/
+                          height:330px;
+                         }
+       .carousel-block_top h4{width: auto;/*350px*/}			   
+        .carousel-block_top p{width: 190px;
+                              font: normal /*14px*/.76em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                          padding-left:10px !important;}
+/* table */ 
+   .otziv_bloc { vertical-align:top;}
+    .otziv_txt{ width:60%;}
+
+/*----  FUTER -----*/	 
+   
+		.futer_menu { width:19%;/*!!!*/}	 	
+		 .futer_menu ul{display: block;/*!!!*/ }
+		  .futer_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .futer_menu ul li a{ 
+		                         font-size:/*16px*/.88em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .futer_contact p{ 
+						 font-size:/*30px*/1.5em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .futer_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }							    	
+}
+@media screen and ( max-width: 599px)
+{
+.width_img { max-width:50%;}
+ .no_width_img{ max-width:85%;}
+ .width_img_tbl{ max-width:60%;}
+  .width_img_form{ max-width:80%;}
+   .width_nabor_img{ max-width:50%;}
+/* ************************************************************** */
+/* ----------------------- HEADER ------------------------------- */
+/* ************************************************************** */
+/*----  HEADER -----*/	 
+   .img_pos {left:78%;/*!!!*/  
+			 max-width:50%;/*!!!*/
+			 top:140px;/*!!!*/}	
+		.header_menu { width:30%;/*!!!*/}	 	
+		 .header_menu ul{display: block;/*!!!*/ }
+		  .header_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .header_menu ul li a{ 
+		                         font-size:/*16px*/.8em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .header_contact p{ 
+						 font-size:/*30px*/1.5em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .header_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }		
+
+/* content */
+.display_box { padding-top:0px;}
+.display_content1{height:380px;}
+ .content2 img { margin-top:170px;
+                 margin-left:60px;}
+.content1, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11, .content12, .content13		
+                       {min-width:200px;
+					    max-width:500px;}	
+.content4 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content11 h2, .content13 h2 {font-size:1.6em !important;}
+ .content5 .content_h2{ margin-top:10px !important;} 
+	   .content6 .content_h2, .content12 .content_h2{ margin-top:20px !important;}
+		.content7 .content_h2{ margin-top:10px !important;}
+		 .content8 .content_h2{ margin-top:10px !important;}
+		  .content10 .content_h3, .content13 .content_h2{ margin-top:15px !important;}
+		   .content11 .content_h2{ margin-top:30px !important;} 
+		    .content13 .content_h2{ margin-top:15px !important;}   
+ .content12 h2{font-size:1.6em !important;}
+  .content10 h3{font-size:1.6em !important;}   
+   .content1 h2{font-size:1.3em !important;/*48px*/  
+                padding: 10px 0 0 0;text-align: center;}
+.box_content2, .box_content9 { max-width:500px;}	
+ .content2 { display:none;}
+  .content3 { float:none; width:100%; margin-top: 10px;}
+   .content3 input { width:100%;}
+     button.button_zakaz_nabor { background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+                                 font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                                 width:162px;
+                                 height:52px;
+				                 padding:16px 0 10px 0;}
+	    button.button_zakaz_nabor:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;
+		                                 cursor: pointer;}	 	
+					
+/* ---------------- PRYMERY RABOT ---------------------- */				 
+.primery_rabot{ height:290px;
+                border-bottom:15px solid #ffffff;}
+								
+/* ----------------SLIDERS PRYMERY RABOT ---------------------- */					  
+       .carousel { width:295px;}    
+		   .carousel-block {width: 250px; /*250px  задаём ширину каждого элемента */
+                            padding: 10px 5px 10px 5px; /* делаем оступы, чтобы элементы не сливались */
+                            height:150px;}
+			.carousel-button-left a, .carousel-button-right a { top:10px;}				
+                  
+/* ---------------------- PREIMUCHESTVA --------------------------*/		 				
+.preimuchestva { height:100px;}
+.left_con_4 p, .center_con_4 p, .right_con_4 p { font-size:.5em !important;}
+
+/* ------------------------- SALE ------------------------------- */
+			
+		.sale { height:180px;} 	
+			.sale p { 
+					  font-size:1.3em !important;
+					  padding-top:15px;}
+					  
+/* ------------------------- SHEMA ----------------------*/			
+.zakaz_shema { height:290px;}
+.content15 { float:none; width:100%;}
+.content15 p { font-size:1.4em;}
+ .content15 p span{ font-size:1em;color:#ff0000 !important;}	
+ 
+/* -------------------- NABOR ------------------------- */
+    .sostav_nabora { height:550px;}   
+	 .content14 { display:none;} 
+	   .sostav_nabora p{ font-size:1.3em;}  
+		 
+		 #sostav_nabora1{display:block; position:absolute; top:12%; left:13%; z-index:16; max-width:30%;}
+          #sostav_nabora2{display:block; position:absolute; top:14%; right:10%; z-index:16;max-width:30%;}
+           #sostav_nabora3{display:block; position:absolute; top:45%; left:5%; z-index:16;max-width:30%;}
+            #sostav_nabora4{display:block; position:absolute; top:47%; right:6%; z-index:16;max-width:30%;}
+             #sostav_p1	{display:block; position:absolute; top:37%; left:22%; z-index:17;}
+              #sostav_p2 {display:block; position:absolute; top:39%; right:19%; z-index:17;}
+               #sostav_p3 {display:block; position:absolute; top:70%; left:19%; z-index:17;}
+                #sostav_p4 {display:block; position:absolute; top:73%; right:4%; z-index:17;}
+	
+	#button_zakaz {background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+                   font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                   width:162px;
+                   height:52px;
+				   padding:16px 0 10px 0;
+				   margin: 400px auto 0 auto;}
+	    #button_zakaz:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}	
+
+ #button { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px;  
+	       }
+	#button:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}
+
+
+/* ------------------------------ FORMAT ---------------------------------------*/
+.format{ height: auto;}
+  .box_ul8 { width:100%; overflow:hidden; display:none;}
+   .box_content8 {width:100%; overflow:hidden; text-align:center;}
+    .box_format1, .box_format2, .box_format3, .box_format4, .box_format5, .box_format6, .box_format7 
+                  {float:none;
+                   width:40%;
+				   background:#FFF;
+				   border:1px solid #ccc;
+				   margin:5px auto;
+				   height:200px;}
+  .box_format1 span, .box_format2 span, .box_format3 span, .box_format4 span, .box_format5 span, .box_format6 span, .box_format7 span
+    { display:block; 
+	  font: normal /*48px*//*38px*/ 2.37em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	  color: #eae9e9; 
+	  text-align:center; 
+
+	  margin-bottom:7px;}  
+   .box_format1 p, .box_format2 p, .box_format3 p, .box_format4 p, .box_format5 p, .box_format6 p, .box_format7 p
+       {display:block; 
+	    font: normal /*14px*/.87em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	    color: #000; 
+	    text-align:center; 
+	    margin-bottom:7px;} 
+    .box_format1 span b, .box_format2 span b, .box_format3 span b, .box_format4 span b, .box_format5 span b, .box_format6 span b, .box_format7 span b
+	         {display:block; 
+	          font: bold /*10px*/.62em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+	          color: #ff0000; 
+	          text-align:center; 
+	          margin-bottom:7px;} 
+          #a_format1 {margin-top:20px !important;}
+		   #a_format2 {margin-top:20px !important;}
+		    #a_format3 {margin-top:20px !important;}
+			 #a_format4 {margin-top:20px !important;}
+			  #a_format5 {margin-top:20px !important;}
+			   #a_format6 {margin-top:20px !important;}
+
+#chek_zakaz1{display:block; position:absolute; top:100px; left:10%; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:100px; left:47%; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:100px; right:10%; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:320px; left:10%; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:320px; left:47%; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:320px; right:10%; z-index:16; max-width:100%;}
+	  #chek_zakaz7{display:block; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:block; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:block; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:block; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:block; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:block; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:block; position:absolute; top:210px; right:2%; z-index:16; max-width:100%;}
+
+/* -------------------- VIBOR KLIENTOV ------------------------- */
+.vibor_client { height:auto;}
+.klienty_hidden { display:block;}
+.klienty_swou { display:none;}
+.vibor_klienty p { font-size:.8em;}
+/* table */ 
+.vibor_klienty p{ font: normal /*14px*/.83em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	              color: #000; } 
+ .vibor_klienty { width:auto;  margin:20px 0 0 0;}
+  .vibor_klienty td{ vertical-align:middle; padding:10px 10px 0 10px;}
+   .vibor-txt_left{ text-align: center !important; width:40%; }
+    .vibor-txt_right{ text-align: center !important;width:40%; }
+     .vibor-img{ vertical-align:middle; text-align:center; width:10%;}
+
+
+/* -------------------- OTZIV KLIENTOV ------------------------- */
+         .otziv{height:400px;} 		 
+/* ------------------ SLIDERS OTZIVY -------------------------- */					  
+.carousel_top{ width:90%;}     
+	 .carousel-block_top {
+                          width: 450px; /*800px*/
+                          height:250px;
+                          background:none;
+						  /*background: url(../images_test/backraund_otzyv500px.png) top no-repeat;*/
+                         }
+       .carousel-block_top h4{width: auto;/*350px*/}			   
+        .carousel-block_top p{width:70%;/*30%*/
+                              font: normal /*14px*/.7em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                          padding-left:5px !important;padding-right:5px !important;}
+/* table */ 
+ .otziv_bloc { width:auto;  margin:0;}
+  .otziv_bloc td{padding:10px;}
+   .otziv_img{display:none; }
+    .otziv_txt{ width:40%; background:#f2f2f2;}
+     .otziv_img2{display:none;}  	 
+/*********** BUTTONS ***********/
+    .carousel-button-left_top a, .carousel-button-right_top a{top:30px; }	      		   
+
+/* -------------------- KAK ZDELAT ZAKAZ ------------------------- */ 
+.sdelat_zakaz { height:auto;}
+
+ #chek_zakaz1{display:block; position:absolute; top:100px; left:80px; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:190px; left:80px; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:280px; left:80px; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:370px; left:80px; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:470px; left:80px; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:580px; left:80px; z-index:16; max-width:100%;}
+	  
+	  #chek_zakaz7{display:none; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:none; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:none; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:none; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:none; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:none; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:none; position:absolute; top:210px; right:2%; z-index:16; max-width:100%;}   
+	    
+	
+	#chek_p1 {display:block; position:absolute; top:140px; left:150px; z-index:17;text-align: left !important;}
+     #chek_p2 {display:block; position:absolute; top:240px; left:150px; z-index:17;text-align: left !important;}
+      #chek_p3 {display:block; position:absolute; top:320px; left:150px; z-index:17;text-align: left !important;}
+       #chek_p4 {display:block; position:absolute; top:430px; left:150px; z-index:17;text-align: left !important;}
+        #chek_p5 {display:block; position:absolute; top:540px; left:150px; z-index:17;text-align: left !important;}
+         #chek_p6 {display:block; position:absolute; top:640px; left:150px; z-index:17;text-align: left !important;} 
+ 
+ #button_sdelat_zakaz {margin:640px auto 0 auto;}
+	                 
+
+/* -------------------- USPEY ZAKAZAT ------------------------- */
+.uspey_zakazat{ height:750px;}
+.content13 { overflow:visible;}
+.box_button_sales1 p { font-size:1.2em;}
+.box_button_sales1 p img { left:30px;}
+
+#sales_zakaz1{display:block; position:absolute; top:100px; left:12%; z-index:16;}
+ #sales_zakaz2{display:block; position:absolute; top:100px; left:58%; z-index:16;}
+  #sales_zakaz3{display:block; position:absolute; top:250px; left:1%; z-index:16;}
+   #sales_zakaz4{display:block; position:absolute; top:250px; left:70%; z-index:16;}
+    #sales_zakaz5{display:block; position:absolute; top:510px; right:15%; z-index:16;}
+     #sales_zakaz6{display:none; position:absolute; top:160px; right:44%; z-index:16;}
+	  #sales_zakaz7{display:block; position:absolute; top:500px; left:10%; z-index:16;}
+    
+	#sales_p1 {display:block; position:absolute; top:220px; left:20%; z-index:17;font-size:1.1em !important; }
+     #sales_p2 {display:block; position:absolute; top:220px; left:65%; z-index:17;font-size:1.1em !important;}
+      #sales_p3 {display:block; position:absolute; top:365px; left:15%; z-index:17;font-size:1.1em !important;}
+       #sales_p4 {display:block; position:absolute; top:365px; left:66%; z-index:17;font-size:1.1em !important;}
+        #sales_p5 {display:block; position:absolute; top:400px; left:2%; z-index:17;font-size:.7em !important;}
+         #sales_p6 {display:block; position:absolute; top:240px; left:39%; z-index:17;font-size:.8em !important;}
+		  #sales_p7 {display:block; position:absolute; top:650px; right:19%; z-index:17;font-size:1.3em !important;}
+           #sales_p8 {display:block; position:absolute; top:490px; right: 15%; z-index:17;font-size:.8em !important;}   			
+            #sales_p9 {display:block; position:absolute; top:600px; left:15%; z-index:17;font-size:.8em !important;}  
+			
+ #button_sales1 { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px;  }
+#button_sales2 { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px; }							 
+	           #button_sales1:hover, #button_sales2:hover 
+		        {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}
+
+/* -------------------------- MODAL WINDOW -----------------------*/
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+.form_windows{/*min-width:900px;*/ ; 
+              max-width:900px; 
+			  margin:0 auto;
+			  overflow:hidden;
+			  position:relative;
+			  text-align:center;}
+.adr-dostavki{ margin:0 30px; 
+               padding:10px;
+			   font-family: "Open Sans", Verdana, Geneva, sans-serif;
+			   overflow:hidden;
+			   }
+ .adr-dostavki h2{ font: bold /*20px*/.9em "Open Sans", Verdana, Geneva, sans-serif;
+	               color: #000; text-align:center !important; padding-bottom:10px; } 			   
+  .adr-dostavki h4{ font: normal /*16px*/.7em "Open Sans", Verdana, Geneva, sans-serif;
+	                color:#555; text-align:center !important;padding-bottom:5px;}		   
+   .adr-dostavki p { font: normal /*14px*/.58em "Open Sans", Verdana, Geneva, sans-serif;
+                     color:#555; } 
+	.adr-dostavki img { margin-top:10px;} 
+	  #img_form{ margin-top:0 !important; max-width:80%; display:none;}
+
+
+/* table */ 
+ .zakaz-data { width:100%;  margin:10px auto;}
+ .zakaz-data tr {padding-bottom:2px;}
+  .zakaz-data td { vertical-align:middle; padding:3px;}
+   .zakaz-txt{ font-size:/*12px*/.5em; text-align:right !important;width:10%; }
+    .zakaz-inpt{width:100%; margin-bottom:2px !important;}
+	 .zakaz-inpt input{font-size:/*14px*/.7em; padding:2px; color:#acabab; width:100%; margin-bottom:2px !important;}
+      .zakaz-error{ width:30%; }
+	   #name_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 
+	    #name_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 
+		 #name_error3 { font-size:/*14px*/.6em; color:#F00 !important; text-align: center !important;} 
+		  #email_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		   #email_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 	  	  				  								
+	        #phone_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		     #phone_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}		    
+		      #adres_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		       #adres_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+
+#file_holder { width:94%;}
+/*----  FUTER -----*/	 
+   
+		.futer_menu { width:19%;/*!!!*/}	 	
+		 .futer_menu ul{display: block;/*!!!*/ }
+		  .futer_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .futer_menu ul li a{ 
+		                         font-size:/*16px*/.8em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .futer_contact p{ 
+						 font-size:/*30px*/1.5em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .futer_contact span{ 
+		                     font-size:/*14px*/.7em;/*!!!*/  
+		                     }					
+}
+
+@media screen and ( max-width: 480px)
+{
+.width_img { max-width:50%;}
+ .no_width_img{ max-width:85%;}
+ .width_img_tbl{ max-width:60%;}
+  .width_img_form{ max-width:80%;}
+   .width_nabor_img{ max-width:50%;}
+/* ************************************************************** */
+/* ----------------------- HEADER ------------------------------- */
+/* ************************************************************** */
+/*----  HEADER -----*/	 
+   .img_pos {left:78%;/*!!!*/  
+			 max-width:50%;/*!!!*/
+			 top:140px;/*!!!*/}	
+	   .header_box_c {width:50%;/*!!!*/}	
+		.header_menu { width:30%;/*!!!*/}	 	
+		 .header_menu ul{display: block;/*!!!*/ }
+		  .header_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .header_menu ul li a{ 
+		                         font-size:/*16px*/.7em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .header_contact p{ 
+						 font-size:/*30px*/1.1em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .header_contact span{ 
+		                     font-size:/*14px*/.5em;/*!!!*/  
+		                     }	
+/* -------------------------- MODAL WINDOW -----------------------*/
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+.form_windows{/*min-width:900px;*/ ; 
+              max-width:900px; 
+			  margin:0 auto;
+			  overflow:hidden;
+			  position:relative;
+			  text-align:center;}
+.adr-dostavki{ margin:0 30px; 
+               padding:10px;
+			   font-family: "Open Sans", Verdana, Geneva, sans-serif;
+			   overflow:hidden;
+			   }
+ .adr-dostavki h2{ font: bold /*20px*/.9em "Open Sans", Verdana, Geneva, sans-serif;
+	               color: #000; text-align:center !important; padding-bottom:10px; } 			   
+  .adr-dostavki h4{ font: normal /*16px*/.7em "Open Sans", Verdana, Geneva, sans-serif;
+	                color:#555; text-align:center !important;padding-bottom:5px;}		   
+   .adr-dostavki p { font: normal /*14px*/.58em "Open Sans", Verdana, Geneva, sans-serif;
+                     color:#555; } 
+	.adr-dostavki img { margin-top:10px;} 
+	  #img_form{ margin-top:0 !important; max-width:80%; display:none;}
+
+
+/* table */ 
+ .zakaz-data { width:100%;  margin:10px auto;}
+ .zakaz-data tr {padding-bottom:2px;}
+  .zakaz-data td { vertical-align:middle; padding:3px;}
+   .zakaz-txt{ font-size:/*12px*/.5em; text-align:right !important;width:10%; }
+    .zakaz-inpt{width:100%; margin-bottom:2px !important;}
+	 .zakaz-inpt input{font-size:/*14px*/.7em; padding:2px; color:#acabab; width:100%; margin-bottom:2px !important;}
+      .zakaz-error{ width:30%; }
+	   #name_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 
+	    #name_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 
+		 #name_error3 { font-size:/*14px*/.6em; color:#F00 !important; text-align: center !important;} 
+		  #email_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		   #email_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;} 	  	  				  								
+	        #phone_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		     #phone_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}		    
+		      #adres_error { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+		       #adres_error2 { font-size:/*14px*/.6em; color:#F00 !important; text-align: left !important;}
+
+#file_holder { width:94%;}
+/*----  FUTER -----*/	 
+       
+	   
+	   .futer_box_c {width:50%;/*!!!*/}
+		.futer_menu { width:30%;/*!!!*/}	 	
+		 .futer_menu ul{display: block;/*!!!*/ }
+		  .futer_menu ul li{ display: block;/*!!!*/
+							  height:20px;/*!!!*/  
+							  }
+		   .futer_menu ul li a{ 
+		                         font-size:/*16px*/.7em; /*!!!*/   
+								 height:20px;/*!!!*/  
+								 }
+			   .futer_contact p{ 
+						 font-size:/*30px*/1.1em;/*!!!*/  
+						 margin-bottom:2px;/*!!!*/ }
+		           .futer_contact span{ 
+		                     font-size:/*14px*/.5em;/*!!!*/  
+		                     }										 		
+}
+
+@media screen and ( max-width: 240px)
+{ 
+.width_img { max-width:40%;}
+ .no_width_img{ max-width:85%;}
+ .width_img_tbl{ max-width:50%;}
+  .width_img_form{ max-width:70%;}
+   .width_nabor_img{ max-width:50%;}
+/* ************************************************************** */
+/* ----------------------- HEADER ------------------------------- */
+/* ************************************************************** */
+.main{
+	  min-width:200px ;
+	  max-width: 290px; 
+	  margin:0 auto;};
+ 
+.header_main {z-index:0;  /*для закрепления шапки сайта при прокрутке*/} 
+ .header{ 
+		  height: auto; 
+		  position: relative;/*для закрепления шапки сайта при прокрутке*/
+		  z-index: 9999;/*для закрепления шапки сайта при прокрутке*/
+		  }
+   .header_content {
+                    min-width:200px;
+					max-width:290px;}
+  .img_pos { left:85%;  
+			 max-width:50%;
+			 top:80px;}
+
+    .header_box_l {float:none; 
+	               width:100%;
+				   border-bottom: 1px solid #fff;}
+	 .header_box_m {float:none; 
+	                 width:100%;
+					 border-bottom: 1px solid #fff;
+					 padding-top:10px;}
+	   .header_box_c {float:none; 
+	                  width:100%; 
+	                  height:45px; 
+					  padding-top:3px;
+					  background:url(../images_test/icon_phone.jpg) top left no-repeat; 
+					  margin: 0 20% 0 20%;
+					  }
+
+ .header_logo h1{ font-size:1em;}
+  .header_logo span{ font-size:.6em;}   
+	.header_menu{ width:98%; margin:0 auto;} 
+	  .header_menu ul{display: block; list-style:none;}
+		.header_menu ul li{ display: block; 
+		                    width:auto;
+							height:20px;
+							float:left; 
+							}
+		   .header_menu ul li a{ display:block;
+		                         text-decoration: underline;
+		                         font-size:/*12px*/.5em; 
+		                         font-weight:normal; 
+		                         color:#fdfe90; 
+		                         font-family:Verdana, Geneva, sans-serif;
+								 padding:0 5px;
+								 vertical-align:middle; 
+								 height:20px; 
+								 display: block;}
+		      .header_contact { padding-left:55px; width:100%;}
+			   .header_contact p{ 
+						 font-size:1em; 
+		                          }
+		           .header_contact span{ 
+		                                 font-size:.5em; 
+		                                   }
+
+/* content */
+.display_box { padding-top:0px;}
+.display_content1{height:380px;}
+ .content2 img { margin-top:170px;
+                 margin-left:60px;}
+.content1, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11, .content12, .content13		
+                       {min-width:240px;
+					    max-width:240px;}	
+.content4 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content11 h2, .content13 h2 {font-size:1.6em !important;}
+ .content5 .content_h2{ margin-top:10px !important;} 
+	   .content6 .content_h2, .content12 .content_h2{ margin-top:20px !important;}
+		.content7 .content_h2{ margin-top:10px !important;}
+		 .content8 .content_h2{ margin-top:10px !important;}
+		  .content10 .content_h3, .content13 .content_h2{ margin-top:15px !important;}
+		   .content11 .content_h2{ margin-top:30px !important;} 
+		    .content13 .content_h2{ margin-top:15px !important;}   
+ .content12 h2{font-size:1.6em !important;}
+  .content10 h3{font-size:1.6em !important;}   
+   .content1 h2{font-size:1.3em !important;/*48px*/  
+                padding: 10px 0 0 0;text-align: center;}
+.box_content2, .box_content9 { max-width:500px;}	
+ .content2 { display:none;}
+  .content3 { float:none; width:100%; margin-top: 10px;}
+   .content3 input { width:100%;}
+     button.button_zakaz_nabor { background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+                                 font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                                 width:162px;
+                                 height:52px;
+				                 padding:16px 0 10px 0;}
+	    button.button_zakaz_nabor:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;
+		                                 cursor: pointer;}	 	
+					
+/* ---------------- PRYMERY RABOT ---------------------- */				 
+.primery_rabot{ height:290px;
+                border-bottom:15px solid #ffffff;}
+								
+/* ----------------SLIDERS PRYMERY RABOT ---------------------- */					  
+       .carousel { width:295px;}    
+		   .carousel-block {width: 250px; /*250px  задаём ширину каждого элемента */
+                            padding: 10px 5px 10px 5px; /* делаем оступы, чтобы элементы не сливались */
+                            height:150px;}
+			.carousel-button-left a, .carousel-button-right a { top:10px;}				
+                  
+/* ---------------------- PREIMUCHESTVA --------------------------*/		 				
+.preimuchestva { height:100px;}
+.left_con_4 p, .center_con_4 p, .right_con_4 p { font-size:.5em !important;}
+
+/* ------------------------- SALE ------------------------------- */
+			
+		.sale { height:180px;} 	
+			.sale p { 
+					  font-size:1em !important;
+					  padding-top:15px;}
+					  
+/* ------------------------- SHEMA ----------------------*/			
+.zakaz_shema { height:350px;}
+.content15 { float:none; width:100%;}
+.content15 p { font-size:1.4em;}
+ .content15 p span{ font-size:1em;color:#ff0000 !important;}	
+ 
+/* -------------------- NABOR ------------------------- */
+    .sostav_nabora { height:550px;}   
+	 .content14 { display:none;} 
+	   .sostav_nabora p{ font-size:1.3em;}  
+		 
+		 #sostav_nabora1{display:block; position:absolute; top:12%; left:5%; z-index:16; max-width:50%;}
+          #sostav_nabora2{display:block; position:absolute; top:14%; right:5%; z-index:16;max-width:50%;}
+           #sostav_nabora3{display:block; position:absolute; top:45%; left:5%; z-index:16;max-width:50%;}
+            #sostav_nabora4{display:block; position:absolute; top:47%; right:5%; z-index:16;max-width:50%;}
+             #sostav_p1	{display:block; position:absolute; top:37%; left:22%; z-index:17;}
+              #sostav_p2 {display:block; position:absolute; top:39%; right:19%; z-index:17;}
+               #sostav_p3 {display:block; position:absolute; top:70%; left:19%; z-index:17;}
+                #sostav_p4 {display:block; position:absolute; top:73%; right:4%; z-index:17;}
+	
+	#button_zakaz {background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+                   font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+                   width:162px;
+                   height:52px;
+				   padding:16px 0 10px 0;
+				   margin: 400px auto 0 auto;}
+	    #button_zakaz:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}	
+
+ #button { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px;  
+	       }
+	#button:hover {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}
+
+
+/* ------------------------------ FORMAT ---------------------------------------*/
+.format{ height: auto;}
+  .box_ul8 { width:100%; overflow:hidden; display:none;}
+   .box_content8 {width:100%; overflow:hidden; text-align:center;}
+    .box_format1, .box_format2, .box_format3, .box_format4, .box_format5, .box_format6, .box_format7 
+                  {float:none;
+                   width:40%;
+				   background:#FFF;
+				   border:1px solid #ccc;
+				   margin:5px auto;
+				   height:200px;}
+  .box_format1 span, .box_format2 span, .box_format3 span, .box_format4 span, .box_format5 span, .box_format6 span, .box_format7 span
+    { display:block; 
+	  font: normal /*48px*//*38px*/ 2.37em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	  color: #eae9e9; 
+	  text-align:center; 
+	  margin-bottom:7px;}  
+   .box_format1 p, .box_format2 p, .box_format3 p, .box_format4 p, .box_format5 p, .box_format6 p, .box_format7 p
+       {display:block; 
+	    font: normal /*14px*/.87em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	    color: #000; 
+	    text-align:center; 
+	    margin-bottom:7px;} 
+    .box_format1 span b, .box_format2 span b, .box_format3 span b, .box_format4 span b, .box_format5 span b, .box_format6 span b, .box_format7 span b
+	         {display:block; 
+	          font: bold /*10px*/.62em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+	          color: #ff0000; 
+	          text-align:center; 
+	          margin-bottom:7px;} 
+          #a_format1 {margin-top:20px !important;}
+		   #a_format2 {margin-top:20px !important;}
+		    #a_format3 {margin-top:20px !important;}
+			 #a_format4 {margin-top:20px !important;}
+			  #a_format5 {margin-top:20px !important;}
+			   #a_format6 {margin-top:20px !important;}
+
+#chek_zakaz1{display:block; position:absolute; top:100px; left:10%; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:100px; left:47%; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:100px; right:10%; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:320px; left:10%; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:320px; left:47%; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:320px; right:10%; z-index:16; max-width:100%;}
+	  #chek_zakaz7{display:block; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:block; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:block; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:block; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:block; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:block; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:block; position:absolute; top:210px; right:2%; z-index:16; max-width:100%;}
+
+/* -------------------- VIBOR KLIENTOV ------------------------- */
+.vibor_client { height:auto;}
+.klienty_hidden { display:block;}
+.klienty_swou { display:none;}
+.vibor_klienty p { font-size:.8em;}
+/* table */ 
+.vibor_klienty p{ font: normal /*14px*/.83em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	              color: #000; } 
+ .vibor_klienty { width:auto;  margin:20px 0 0 0;}
+  .vibor_klienty td{ vertical-align:middle; padding:10px 10px 0 10px;}
+   .vibor-txt_left{ text-align: center !important; width:40%; }
+    .vibor-txt_right{ text-align: center !important;width:40%; }
+     .vibor-img{ vertical-align:middle; text-align:center; width:10%;}
+
+
+/* -------------------- OTZIV KLIENTOV ------------------------- */
+         .otziv{height:400px;} 		 
+/* ------------------ SLIDERS OTZIVY -------------------------- */					  
+.carousel_top{ width:90%;}     
+	 .carousel-block_top {
+                          width: 450px; /*800px*/
+                          height:250px;
+                          background:none;
+						  /*background: url(../images_test/backraund_otzyv500px.png) top no-repeat;*/
+                         }
+       .carousel-block_top h4{width: auto;/*350px*/}			   
+        .carousel-block_top p{width:70%;/*30%*/
+                              font: normal /*14px*/.7em "Poiret One Regular","Open Sans", Verdana, Geneva, sans-serif;
+	                          padding-left:5px !important;padding-right:5px !important;}
+/* table */ 
+ .otziv_bloc { width:auto;  margin:0;}
+  .otziv_bloc td{padding:10px;}
+   .otziv_img{display:none; }
+    .otziv_txt{ width:40%; background:#f2f2f2;}
+     .otziv_img2{display:none;}  	 
+/*********** BUTTONS ***********/
+    .carousel-button-left_top a, .carousel-button-right_top a{top:30px; }	      		   
+
+/* -------------------- KAK ZDELAT ZAKAZ ------------------------- */ 
+.sdelat_zakaz { height:auto;}
+
+ #chek_zakaz1{display:block; position:absolute; top:100px; left:80px; z-index:16; max-width:100%;}
+ #chek_zakaz2{display:block; position:absolute; top:190px; left:80px; z-index:16; max-width:100%;}
+  #chek_zakaz3{display:block; position:absolute; top:280px; left:80px; z-index:16; max-width:100%;}
+   #chek_zakaz4{display:block; position:absolute; top:370px; left:80px; z-index:16; max-width:100%;}
+    #chek_zakaz5{display:block; position:absolute; top:470px; left:80px; z-index:16; max-width:100%;}
+	 #chek_zakaz6{display:block; position:absolute; top:580px; left:80px; z-index:16; max-width:100%;}
+	  
+	  #chek_zakaz7{display:none; position:absolute; top:116px; left:25%; z-index:16; max-width:100%;}
+       #chek_zakaz8{display:none; position:absolute; top:116px; right:23%; z-index:16; max-width:100%;}
+        #chek_zakaz9{display:none; position:absolute; top:320px; left:25%; z-index:16; max-width:100%;}
+		 #chek_zakaz10{display:none; position:absolute; top:320px; right:23%; z-index:16; max-width:100%;} 
+		  #chek_zakaz11{display:none; position:absolute; top:126px; right:4%; z-index:16; max-width:100%;}
+           #chek_zakaz12{display:none; position:absolute; top:300px; left:2%; z-index:16; max-width:100%;}
+			#chek_zakaz13{display:none; position:absolute; top:210px; right:2%; z-index:16; max-width:100%;}   
+	    
+	
+	#chek_p1 {display:block; position:absolute; top:140px; left:150px; z-index:17;text-align: left !important;}
+     #chek_p2 {display:block; position:absolute; top:240px; left:150px; z-index:17;text-align: left !important;}
+      #chek_p3 {display:block; position:absolute; top:320px; left:150px; z-index:17;text-align: left !important;}
+       #chek_p4 {display:block; position:absolute; top:430px; left:150px; z-index:17;text-align: left !important;}
+        #chek_p5 {display:block; position:absolute; top:540px; left:150px; z-index:17;text-align: left !important;}
+         #chek_p6 {display:block; position:absolute; top:640px; left:150px; z-index:17;text-align: left !important;} 
+ 
+ #button_sdelat_zakaz {margin:640px auto 0 auto;}
+	                 
+
+/* -------------------- USPEY ZAKAZAT ------------------------- */
+.uspey_zakazat{ height:750px;}
+.content13 { overflow:visible;}
+.box_button_sales1 p { font-size:1.2em;}
+.box_button_sales1 p img { left:30px;}
+
+#sales_zakaz1{display:block; position:absolute; top:100px; left:12%; z-index:16;}
+ #sales_zakaz2{display:block; position:absolute; top:100px; left:58%; z-index:16;}
+  #sales_zakaz3{display:block; position:absolute; top:250px; left:1%; z-index:16;}
+   #sales_zakaz4{display:block; position:absolute; top:250px; left:70%; z-index:16;}
+    #sales_zakaz5{display:block; position:absolute; top:510px; right:15%; z-index:16;}
+     #sales_zakaz6{display:none; position:absolute; top:160px; right:44%; z-index:16;}
+	  #sales_zakaz7{display:block; position:absolute; top:500px; left:10%; z-index:16;}
+    
+	#sales_p1 {display:block; position:absolute; top:220px; left:20%; z-index:17;font-size:1.1em !important; }
+     #sales_p2 {display:block; position:absolute; top:220px; left:65%; z-index:17;font-size:1.1em !important;}
+      #sales_p3 {display:block; position:absolute; top:365px; left:15%; z-index:17;font-size:1.1em !important;}
+       #sales_p4 {display:block; position:absolute; top:365px; left:66%; z-index:17;font-size:1.1em !important;}
+        #sales_p5 {display:block; position:absolute; top:400px; left:2%; z-index:17;font-size:.7em !important;}
+         #sales_p6 {display:block; position:absolute; top:240px; left:39%; z-index:17;font-size:.8em !important;}
+		  #sales_p7 {display:block; position:absolute; top:650px; right:19%; z-index:17;font-size:1.3em !important;}
+           #sales_p8 {display:block; position:absolute; top:490px; right: 15%; z-index:17;font-size:.8em !important;}   			
+            #sales_p9 {display:block; position:absolute; top:600px; left:15%; z-index:17;font-size:.8em !important;}  
+			
+ #button_sales1 { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px;  }
+#button_sales2 { display:block;
+            margin:0 auto ;
+	        background: url(../images_test/bacgraund_button_mini.png) top no-repeat;
+            border: none;
+            color: #000;
+            font: normal /*24px*/1em ADVENTURE,"Open Sans", Verdana, Geneva, sans-serif;
+            line-height: 1;
+            padding: 16px 0 10px 0;
+            text-align: center;
+            width:162px;
+            height:52px; }							 
+	           #button_sales1:hover, #button_sales2:hover 
+		        {background:url(../images_test/bacgraund_button_activmini.png) top no-repeat;color: #ff0000;}
+
+/* -------------------------- MODAL WINDOW -----------------------*/
+/* -------------------------- FORMS  ZAKAZ----------------------- */
+.form_windows{/*min-width:900px;*/ ; 
+              max-width:240px; 
+			  margin:0 auto;
+			  overflow:hidden;
+			  position:relative;
+			  text-align:center;}
+.adr-dostavki{ margin:0 10px; 
+               padding:0px;
+			   font-family: "Open Sans", Verdana, Geneva, sans-serif;
+			   overflow:hidden;
+			   }
+ .adr-dostavki h2{ font: bold /*20px*/.7em "Open Sans", Verdana, Geneva, sans-serif;
+	               color: #000; text-align:center !important; padding-bottom:3px; } 			   
+  .adr-dostavki h4{ font: normal /*16px*/.5em "Open Sans", Verdana, Geneva, sans-serif;
+	                color:#555; text-align:center !important;padding-bottom:3px;}		   
+   .adr-dostavki p { font: normal /*14px*/.4em "Open Sans", Verdana, Geneva, sans-serif;
+                     color:#555; } 
+	.adr-dostavki img { margin-top:3px;} 
+	  #img_form{ margin-top:0 !important; max-width:50%; display:none;}
+
+
+/* table */ 
+ .zakaz-data { width:100%;  margin:0 auto;}
+ .zakaz-data tr {padding-bottom:2px;}
+  .zakaz-data td { vertical-align:middle; padding:3px;}
+   .zakaz-txt{ font-size:/*12px*/.4em; text-align:right !important;width:10%; }
+    .zakaz-inpt{width:100%; margin-bottom:2px !important;}
+	 .zakaz-inpt input{font-size:/*14px*/.5em; padding:2px; color:#acabab; width:100%; margin-bottom:2px !important;}
+      .zakaz-error{ width:30%; }
+	   #name_error { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;} 
+	    #name_error2 { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;} 
+		 #name_error3 { font-size:/*14px*/.5em; color:#F00 !important; text-align: center !important;} 
+		  #email_error { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;}
+		   #email_error2 { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;} 	  	  				  								
+	        #phone_error { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;}
+		     #phone_error2 { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;}		    
+		      #adres_error { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;}
+		       #adres_error2 { font-size:/*14px*/.5em; color:#F00 !important; text-align: left !important;}
+
+#file_holder { width:94%;}
+/* ************************************************************** */  
+/* -------------------------- FUTER ----------------------------- */
+/* ************************************************************** */
+ .futer{ 
+		height:auto; 
+		  } 
+    .futer_content {
+                    min-width:240px;
+					max-width:240px;}
+  .img_pos { left:85%;  
+			 max-width:50%;
+			 top:80px;}
+
+    .futer_box_l {float:none; 
+	               width:100%;
+				   border-bottom: 1px solid #fff;}
+	 .futer_box_m {float:none; 
+	                 width:100%;
+					 border-bottom: 1px solid #fff;
+					 padding-top:10px;}
+	   .futer_box_c {float:none; 
+	                  width:100%; 
+	                  height:45px; 
+					  padding-top:3px;
+					  background:url(../images_test/icon_phone.jpg) top left no-repeat; 
+					  margin: 0 20% 0 20%;
+					  }
+
+ .futer_logo h1{ font-size:1em;}
+  .futer_logo span{ font-size:.6em;}   
+	.futer_menu{ width:98%; margin:0 auto;} 
+	  .futer_menu ul{display: block; list-style:none;}
+		.futer_menu ul li{ display: block; 
+		                    width:auto;
+							height:20px;
+							float:left; 
+							}
+		   .futer_menu ul li a{ display:block;
+		                         text-decoration: underline;
+		                         font-size:/*12px*/.5em; 
+		                         font-weight:normal; 
+		                         color:#fdfe90; 
+		                         font-family:Verdana, Geneva, sans-serif;
+								 padding:0 5px;
+								 vertical-align:middle; 
+								 height:20px; 
+								 display: block;}
+		      .futer_contact { padding-left:55px; width:100%;}
+			   .futer_contact p{ 
+						 font-size:1em; 
+		                          }
+		           .futer_contact span{ 
+		                                 font-size:.5em; 
+		                                   }
+}
